@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "carzone-project"
+version = "0.1.0"
+description = ""
+authors = ["sliverKi <lovee2756@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "carzone_project"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+django = "^4.1.7"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
