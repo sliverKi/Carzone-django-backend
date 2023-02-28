@@ -1,14 +1,18 @@
 
 from urllib.request import Request
 from django.shortcuts import render
-
+from .models import Team
 
 def Home(request):
-    return render(request, 'pages/home.html')
+    teams=Team.objects.all()
+    data={ 'teams' : teams, }
+    return render(request, 'pages/home.html', data)
 
 
 def About(request):
-    return render(request, 'pages/about.html')
+    teams=Team.objects.all()
+    data={ 'teams' : teams, }
+    return render(request, 'pages/about.html', data)
 
 
 def Services(request):
